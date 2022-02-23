@@ -13,7 +13,7 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
-      - name: Golang Action
-        uses: strongishllama/golang-action-docker@main
+      - name: Golang Action Docker
+        uses: docker://ghcr.io/strongishllama/golang-action-docker:latest
         with:
           example-input: Hello world!
